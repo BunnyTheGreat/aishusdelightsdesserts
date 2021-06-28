@@ -1,0 +1,259 @@
+<html>
+<head>
+ <title>Aishu's Delights</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Aishu's Delights</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="https://bunnythegreat.github.io/aishusdelightshomepage/">Home</a></li>
+                    <li><a href="#Desserts">Desserts</a></li>
+                <li><a href="#Snacks">Snacks</a></li>
+                <li><a href="#cookinggallery">Cooking Gallery</a></li>
+                <li><a href="#aboutthechef">About the Chef</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="Desserts" class="parallax-container">
+            <div class="parallax-inner">
+            <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  margin-top:15px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('cakes')"> Cakes</button>
+  <button class="btn" onclick="filterSelection('cookies')"> Cookies</button>
+  <button class="btn" onclick="filterSelection('others')"> Others</button>rd
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column cakes">
+    <div class="content">
+      <img src="https://tatyanaseverydayfood.com/wp-content/uploads/2018/07/Summer-Sangria-Cake-4.jpg" alt="Cake" style="width:100%"  id="dessert_thumbnails">
+      <h4>Summer Sangria Cake</h4>
+      <p>Very Yummy</p>
+    </div>
+  </div>
+  <div class="column cakes">
+    <div class="content">
+    <img src="https://preppykitchen.com/wp-content/uploads/2019/06/Chocolate-cake-recipe-1200a.jpg" alt="Cake" style="width:100%"  id="dessert_thumbnails">
+      <h4>Chocolate Cake</h4>
+      <p>Delicious</p>
+    </div>
+  </div>
+  <div class="column cakes">
+    <div class="content">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg6Z8t0GnlyxFmprU889cHER3nIP7kGTReGw&usqp=CAU" alt="Cake" style="width:100%"  id="dessert_thumbnails">
+      <h4>Wedding Cake</h4>
+      <p>Fancy</p>
+    </div>
+  </div>
+  
+  <div class="column cookies">
+    <div class="content">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgqVJ2WTdRsefSSTbVVnFYcIoC0qz88ohSuQ&usqp=CAU" alt="Cookies" style="width:100%"  id="dessert_thumbnails">
+      <h4>Chocolate Chip Cookies</h4>
+      <p>Chewy and Soft</p>
+    </div>
+  </div>
+  <div class="column cookies">
+    <div class="content">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMtytJtOvxZXxp5UPg6-1gWNweWwVdyfwm1Q&usqp=CAU" alt="Cookies" style="width:100%"  id="dessert_thumbnails">
+      <h4>Red Velvet Cookies</h4>
+      <p>yummy yummy</p>
+    </div>
+  </div>
+  <div class="column cookies">
+    <div class="content">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzVVRMPhEKlmemLyxJ-qObeIl5kGxcMQIfXw&usqp=CAU" alt="Cookies" style="width:100%"  id="dessert_thumbnails">
+      <h4>Chocolate Chip Cookies</h4>
+      <p>Small Batch Cookies with Crunchy Choco Chips</p>
+    </div>
+  </div>
+
+  <div class="column others">
+    <div class="content">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcYAzU0j0hqS81Hn4vuVrdjYovFZrkt5WU0w&usqp=CAU" alt="Brownies" style="width:100%"  id="dessert_thumbnails">
+      <h4>Classic Brownies</h4>
+      <p>Crunchy and Chocolatey</p>
+    </div>
+  </div>
+  <div class="column others">
+    <div class="content">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS01cr2X4tEr5bOquNAis_I7ELL3M9XKutrOQ&usqp=CAU" alt="Truffles" style="width:100%"  id="dessert_thumbnails">
+      <h4>Classic Truffles</h4>
+      <p>Creamy</p>
+    </div>
+  </div>
+  <div class="column others">
+    <div class="content">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTajmr1iCPLJOA0KjHHVJ52AIKzx0icOi1Xlg&usqp=CAU" alt="Donuts" style="width:100%"  id="dessert_thumbnails">
+      <h4>Donuts</h4>
+      <p>Fluffy</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
+                
+            </div>
+        </section>
+    </body>
+</html>
